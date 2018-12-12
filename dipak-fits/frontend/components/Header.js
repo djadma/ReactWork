@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import Nav from './Nav';
-import Router from 'next/router';
 import NProgress from 'nprogress';
+import Router from 'next/router';
+import Nav from './Nav';
+
 
 Router.onRouteChangeStart = () => {
   NProgress.start();
@@ -22,7 +23,7 @@ const Logo = styled.h1`
   z-index: 2;
   transform: skew(-7deg);
   a {
-    padding: 0.5rem 1 rem;
+    padding: 0.5rem 1rem;
     background: ${props => props.theme.red};
     color: white;
     text-transform: uppercase;
@@ -59,15 +60,15 @@ const Header = () => (
       <Logo>
         <Link href="/">
           <a>Dipak Fits</a>
-        </Link>  
+        </Link>
       </Logo>
-       <Nav />
+      <Nav />
     </div>
     <div className="sub-bar">
       <p>Search</p>
     </div>
-    <div>Crad</div>
+    <div>Cart</div>
   </StyledHeader>
-)
+);
 
 export default Header;
