@@ -1,5 +1,5 @@
 # source: https://eu1.prisma.sh/dipak-jadam/dipakkk-fits/dev
-# timestamp: Wed Dec 05 2018 16:35:17 GMT+0530 (IST)
+# timestamp: Wed Dec 12 2018 18:52:29 GMT+0530 (IST)
 
 type AggregateItem {
   count: Int!
@@ -669,4 +669,5 @@ input UserWhereInput {
 
 input UserWhereUniqueInput {
   id: ID
+  email: String
 }
